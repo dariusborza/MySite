@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Nostale</title>
+
+<link rel="stylesheet" href="background.css">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="Eyes.css">
+<link rel="stylesheet" href="buttonstyle.css">
+<link rel="stylesheet" href="bar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+
+<nav class="social">
+ <ul>
+    <li class="twitter">
+       <a href="https://twitter.com/NosTale?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter
+         <i class="fa fa-twitter" aria-hidden="true"></i>
+    </li>
+ </ul>
+  <ul>
+    <li class="facebook">
+       <a href="https://www.facebook.com/NosTale/">Facebook
+         <i class="fa fa-facebook-f" aria-hidden="true"></i>
+    </li>
+ </ul>
+  <ul>
+    <li class="instagram">
+       <a href="https://www.instagram.com/nostaleofficial/?hl=en">Instagram
+         <i class="fa fa-instagram" aria-hidden="true"></i>
+    </li>
+ </ul>
+  <ul>
+    <li class="youtube">
+       <a href="https://www.youtube.com/user/OfficialNosTale">Youtube
+         <i class="fa fa-youtube" aria-hidden="true"></i></a>
+    </li>
+ </ul>   
+</nav>
+
+
+<div class="eyes">
+<div class="eye">
+<div class="ball"></div>
+</div>
+<div class="eye">
+<div class="ball"></div>
+</div>
+</div>
+
+<div class="container">
+   <a href="login.html"><button class="btn btn1"><b>Sign in</b></button></a> 
+   <a href="signup.html"><button class="btn btn2"><b>Sign up</b></button></a>
+   <a href="Galerie.html"><button class="btn btn3"><b>Galerie</b></button></a>
+   <a href="Game info.html"><button class="btn btn4"><b>Game info</b></button></a>
+   <a href="Trailer.html"><button class="btn btn5"><b>Trailer</b></button></a>
+</div>
+
+
+<script>
+
+ var balls = document.getElementsByClassName("ball");
+document.onmousemove = function(){
+var x = event.clientX * 100 / window.innerWidth + "%";
+var y = event.clientY * 100 / window.innerHeight + "%";
+   for(var i=0; i<2; i++){
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+      balls[i].style.transform = "translate(-"+x+",-"+y+")";
+}
+}
+
+
+</script>
+</body>
+
+<style>
+body { background-image: url('fundal.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+}
+
+</style> 
+</html>
